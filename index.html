@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snippets</title>
+    <meta charset="UTF-8">
+    <!--Import jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/board.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--Artists-->
+<section class="container">
+    <div class="row">
+        <div class="col s12">
+            <h2 class="title">PSlider</h2>
+            <div class="description center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat harum quidem cum, accusamus magnam unde facere error iure officiis excepturi?</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="slider">
+                <div class="slider-wrapper">
+                   <div class="btn slider-left-btn"><i class="material-icons">chevron_left</i></div> 
+                    <div class="slider-content">
+                        <ul class="slider-items">
+                            <li class="slider-item">
+                                <div class="slider-item-image">
+                                    <img src="https://dummyimage.com/400x600/000000/fff.jpg" alt="image" />
+                                </div>
+                                <div class="slider-item-content">
+                                    <h5 class="slider-item-title">Title 1</h5>
+                                    <div class="slider-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aliquid.</div>
+                                </div>
+                                <div class="slider-item-more">
+                                        <a class="btn" href="#">Więcej</a> 
+                                </div>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slider-item-image">
+                                    <img src="https://dummyimage.com/400x600/000000/fff.jpg" alt="image" />
+                                </div>
+                                <div class="slider-item-content">
+                                    <h5 class="slider-item-title">Title 2</h5>
+                                    <div class="slider-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aliquid.</div>
+                                </div>
+                                <div class="slider-item-more">
+                                        <a class="btn" href="#">Więcej</a> 
+                                </div>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slider-item-image">
+                                    <img src="https://dummyimage.com/400x600/000000/fff.jpg" alt="Wokalista" />
+                                </div>
+                                <div class="slider-item-content">
+                                    <h5 class="slider-item-title">Title 3</h5>
+                                    <div class="slider-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aliquid.</div>
+                                </div>
+                                <div class="slider-item-more">
+                                        <a class="btn" href="#">Więcej</a> 
+                                </div>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slider-item-image">
+                                    <img src="https://dummyimage.com/400x600/000000/fff.jpg" alt="image" />
+                                </div>
+                                <div class="slider-item-content">
+                                    <h5 class="slider-item-title">Title 4</h5>
+                                    <div class="slider-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aliquid.</div>
+                                </div>
+                                <div class="slider-item-more">
+                                        <a class="btn" href="#">Więcej</a> 
+                                </div>
+                            </li>
+                            <li class="slider-item">
+                                <div class="slider-item-image">
+                                    <img src="https://dummyimage.com/400x600/000000/fff.jpg" alt="image" />
+                                </div>
+                                <div class="slider-item-content">
+                                    <h5 class="slider-item-title">Title 5</h5>
+                                    <div class="slider-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, aliquid.
+                                    </div>
+                                    <div class="slider-item-more">
+                                        <a class="btn" href="#">Więcej</a> 
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="btn slider-right-btn"><i class="material-icons">chevron_right</i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>   
+    $(document).ready(function(){
+        /// PSlider
+        $('.slider').slider({
+            "duration" : 600,
+            "prev" : ".slider-left-btn",
+            "next" : ".slider-right-btn"
+        });
+    });
+</script>
+</body>
+</html>
